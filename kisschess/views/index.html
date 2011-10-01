@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset=utf-8> 
+    <meta name="viewport" content="width=620"> 
+    <title>HTML5 Demo: Drag and drop</title> 
+    <style type="text/css">
+        .board td.black { 
+            background-color: black;
+        }
+        .board td {
+            height: 30px;
+            width: 30px;
+        }
+        .board tr, .board td {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .board {
+            border: 1px solid black;
+            margin: 0;
+            padding: 0;
+            border-collapse:collapse;
+        }
+        .template {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="board template">
+        %include board
+    </div>
+    <div id="main_board">
+    </div>
+
+    <script type="text/javascript" src="/static/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="/static/jquery.evented_ajax.js"></script>
+    <script type="text/javascript" src="/static/kisschess.js"></script>
+</body>
+</html>
